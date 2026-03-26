@@ -5,86 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+        /* Custom Color Palette */
+        :root {
+            --cream: #f5f5dc;
+            --rust: #b7410e;
+            --ink: #4b3c3c;
+            --sage: #b2b29a;
+            --blue-ink: #1e1e78;
         }
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            background-color: #333;
-            padding: 1rem;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-        }
-        .hero {
-            height: 100vh;
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        .section {
-            padding: 60px;
-        }
-        /* Custom Cursor */
-        html, body {
-            cursor: url('custom-cursor.png'), auto;
-        }
+        header { background-color: var(--cream); padding: 20px; }
+        /* Additional styles go here */
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#hero">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#lab">Lab</a>
-        <a href="#writing">Writing</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#vision">Vision</a>
-        <a href="#connect">Connect</a>
-    </div>
-    <div class="hero" id="hero">
+    <header>
         <h1>Welcome to My Portfolio</h1>
-        <p>Exploring Technology and Creativity</p>
-    </div>
-    <div class="section" id="projects">
-        <h2>Projects</h2>
-        <p>Description of projects...</p>
-    </div>
-    <div class="section" id="lab">
-        <h2>Lab</h2>
-        <p>Description of lab work...</p>
-    </div>
-    <div class="section" id="writing">
-        <h2>Writing</h2>
-        <p>Description of writing...</p>
-    </div>
-    <div class="section" id="about">
-        <h2>About Me</h2>
-        <p>About section content...</p>
-    </div>
-    <div class="section" id="skills">
-        <h2>Skills</h2>
-        <p>List of skills...</p>
-    </div>
-    <div class="section" id="vision">
-        <h2>Vision</h2>
-        <p>My vision statement...</p>
-    </div>
-    <div class="section" id="connect">
-        <h2>Connect</h2>
-        <p>Contact information...</p>
-    </div>
+        <!-- Navigation goes here -->
+    </header>
+    <section id="hero">
+        <!-- Hero Section Content -->
+    </section>
+    <section id="projects">
+        <!-- Projects Section -->
+    </section>
+    <section id="lab">
+        <!-- Lab Section -->
+    </section>
+    <section id="writing">
+        <!-- Writing Section -->
+    </section>
+    <section id="about">
+        <!-- About Section with SVG Portrait -->
+    </section>
+    <section id="skills">
+        <!-- Skills Track -->
+    </section>
+    <section id="vision">
+        <!-- Vision Section -->
+    </section>
+    <section id="connect">
+        <!-- Connect Grid -->
+    </section>
+    <footer>
+        <!-- Footer Content -->
+    </footer>
     <script>
-        // JavaScript for interactive elements
-        console.log('Welcome to the portfolio!');
+        // JavaScript for scroll animations and custom cursor
+        document.addEventListener('mousemove', function(e) {
+            const cursor = document.querySelector('.custom-cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+        // Additional JavaScript goes here
     </script>
 </body>
 </html>
